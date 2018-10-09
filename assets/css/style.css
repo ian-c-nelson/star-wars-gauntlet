@@ -67,6 +67,10 @@ header h1 {
         font-family: 'Audiowide', cursive;
     }
 
+    body {
+        background-position: 50% 40%;
+    }
+    
     .character.card {
         height: 21rem;
     }

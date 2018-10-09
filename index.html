@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Star Wars Gauntlet</h1>
+    </header>
+    <div class="content">
+        <div class="container">
+            <div id="message" class="row justify-content-center mb-3">
+                <div class="col text-center p-3">
+                    <p><span id="message-text"></span></p>
+                </div>
+            </div>
+            <div id="characters-area" class="row justify-content-center">
+                <div class="col col-6 col-lg-3 mb-3 luke-skywalker">
+                    <div class="card character" data-character-id="luke-skywalker">
+                        <img class="card-img-top" src="assets/images/luke_redkyber_2_.jpg" alt="Luke Skywalker">
+                        <div class="card-body">
+                            <h5 class="card-title">Luke Skywalker</h5>
+                            <p class="card-text">Health: <span class="health-value"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-6 col-lg-3 mb-3 darth-vader">
+                    <div class="card character" data-character-id="darth-vader">
+                        <img class="card-img-top" src="assets/images/Mitchell_DarthVader_FINAL_sm_1024x1024.jpg" alt="Darth Vader">
+                        <div class="card-body">
+                            <h5 class="card-title">Darth Vader</h5>
+                            <p class="card-text">Health: <span class="health-value"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-6 col-lg-3 mb-3 obi-wan-kenobi">
+                    <div class="card character" data-character-id="obi-wan-kenobi">
+                        <img class="card-img-top" src="assets/images/obi-wan.2.jpg" alt="Obi-Wan Kenobi">
+                        <div class="card-body">
+                            <h5 class="card-title">Obi-Wan Kenobi</h5>
+                            <p class="card-text">Health: <span class="health-value"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-6 col-lg-3 mb-3 darth-maul">
+                    <div class="card character" data-character-id="darth-maul">
+                        <img class="card-img-top" src="assets/images/darth-maul_400x400.jpg" alt="Darth Maul">
+                        <div class="card-body">
+                            <h5 class="card-title">Darth Maul</h5>
+                            <p class="card-text">Health: <span class="health-value"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="battle-area" class="row hidden">
+                <div class="col">
+                    <div class="row justify-content-center">
+                            <div class="col-6 col-md-3 attacker">
+                                </div>
+                                <div id="controls" class="col-12 col-md-2 text-center">
+                                    <button id="attack-button" type="button" class="btn btn-outline-light m-3" value="attack">Attack</button>
+                                    <button id="reset-button" type="button" class="btn btn-outline-light m-3 hidden" value="reset">Play Again?</button>
+                                </div>
+                                <div class="col-6 col-md-3 defender">
+                                </div>
+                                    </div>
+                    <div class="row">
+                        <div class="col text-center">
+                            <p id="battle-message"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="foooter fixed-bottom">
+        <div class="container">
+
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

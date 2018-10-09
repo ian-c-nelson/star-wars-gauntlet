@@ -1,0 +1,81 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+/* base styles */
+* {
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+    background-image: url("../images/tumblr_oqxpc8UTmN1t7b5qro1_1280.jpg");
+    background-repeat: no-repeat; 
+    background-position: 50% 30%;
+    background-size: cover;
+
+    font-family: 'Audiowide', cursive;
+
+}
+
+header {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: white solid 1px;
+
+}
+
+header h1 {
+    font-size: 30px;
+    font-family: 'Audiowide', cursive;
+}
+
+.content {
+    padding: 15px 0;
+}
+
+
+#message {
+    border: white solid 1px;
+}
+
+.character.card {
+    height: 13.5rem;
+}
+
+.character .card-img-top {
+    height: 120px;
+}
+
+.character .card-body {
+    color: black;
+    text-align: center;
+}
+
+.character.defeated {
+    opacity: .5;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    header h1 {
+        font-size: 40px;
+        font-family: 'Audiowide', cursive;
+    }
+
+    .character.card {
+        height: 21rem;
+    }
+            
+    .character .card-img-top {
+        height: 250px;
+    }
+    
+    #controls .btn {
+        margin-top: 140px !important;
+    }
+}

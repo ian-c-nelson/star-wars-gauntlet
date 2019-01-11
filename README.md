@@ -1,1 +1,2 @@
-# unit-4-game
+# Star Wars Gauntlet
+A simple Star Wars fight simulator.
